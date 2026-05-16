@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 flex flex-col items-center justify-center bg-white ${
-        isScrolled ? 'pt-2 pb-4 shadow-md' : 'pt-4 pb-10'
+        isScrolled ? 'pt-2 pb-2 shadow-md' : 'pt-4 pb-4'
       }`}
     >
       <div className="container mx-auto px-6 text-center">
@@ -33,7 +33,7 @@ export default function Navbar() {
             <img 
               src="/IZAN_LUXE_Logo.png" 
               alt="IZĀN LUXE Logo" 
-              className={`transition-all duration-500 object-contain mix-blend-multiply ${isScrolled ? 'h-40' : 'h-80'}`}
+              className={`transition-all duration-500 object-contain mix-blend-multiply ${isScrolled ? 'h-16' : 'h-24'}`}
             />
           </div>
 

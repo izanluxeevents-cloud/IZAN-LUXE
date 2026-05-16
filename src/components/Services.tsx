@@ -42,7 +42,7 @@ const SERVICES = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-24 bg-white scroll-mt-24 md:scroll-mt-32">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">

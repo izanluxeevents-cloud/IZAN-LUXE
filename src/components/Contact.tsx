@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-[#FAF8F4]">
+    <section id="contact" className="py-24 bg-[#FAF8F4] scroll-mt-24 md:scroll-mt-32">
       <div className="container mx-auto px-6">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
