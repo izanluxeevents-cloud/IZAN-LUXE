@@ -92,8 +92,6 @@ export default function Navbar() {
         )}
       </AnimatePresence>
       
-      {/* Decorative Line Below Navbar */}
-      <div className={`transition-opacity duration-500 h-[1px] w-full bg-gold-primary/30 mt-4 ${isScrolled ? 'opacity-100' : 'opacity-0'}`} />
     </nav>
   );
 }
