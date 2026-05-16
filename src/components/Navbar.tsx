@@ -22,42 +22,40 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 flex flex-col items-center justify-center bg-white ${
-        isScrolled ? 'pt-2 pb-2 shadow-md' : 'pt-4 pb-4'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-white ${
+        isScrolled ? 'py-1 shadow-md' : 'py-2'
       }`}
     >
-      <div className="container mx-auto px-6 text-center">
-        <div className="flex flex-col items-center justify-center">
-          {/* Logo Section */}
-          <div className="relative group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img 
-              src="/IZAN_LUXE_Logo.png" 
-              alt="IZĀN LUXE Logo" 
-              className={`transition-all duration-500 object-contain mix-blend-multiply ${isScrolled ? 'h-16' : 'h-24'}`}
-            />
-          </div>
-
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center justify-center gap-8 mt-2">
-            {NAV_ITEMS.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                className="font-sans text-[10px] uppercase tracking-[0.15em] text-text-medium hover:text-gold-primary transition-colors duration-300"
-              >
-                {item.label}
-              </a>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden absolute right-6 top-1/2 -translate-y-1/2 text-gold-primary"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+      <div className="container mx-auto px-6 h-full flex items-center justify-between">
+        {/* Logo Section */}
+        <div className="relative group cursor-pointer flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          <img 
+            src="/IZAN_LUXE_Logo.png" 
+            alt="IZĀN LUXE Logo" 
+            className={`transition-all duration-500 object-contain mix-blend-multiply ${isScrolled ? 'h-24' : 'h-36'}`}
+          />
         </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          {NAV_ITEMS.map((item) => (
+            <a
+              key={item.label}
+              href={item.href}
+              className="font-sans text-[11px] uppercase tracking-[0.15em] text-text-medium hover:text-gold-primary transition-colors duration-300"
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-gold-primary p-2"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
 
       {/* Mobile Menu Overlay */}

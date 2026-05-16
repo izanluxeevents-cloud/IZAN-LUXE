@@ -3,7 +3,7 @@ import { Sparkles } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden pt-32 md:pt-40">
+    <section className="relative h-screen w-full flex items-center justify-center overflow-hidden pt-40 md:pt-48">
       {/* Background with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-[10s] hover:scale-105"
