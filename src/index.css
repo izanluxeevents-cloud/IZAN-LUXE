@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&family=DM+Sans:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #FAF8F4;
+  --color-bg-surface: #FFFFFF;
+  --color-gold-primary: #C9A84C;
+  --color-gold-light: #E8D5A3;
+  --color-gold-dark: #8B6914;
+  --color-text-dark: #1A1410;
+  --color-text-medium: #6B5B3E;
+  --color-text-muted: #9E8E70;
+  --color-border-gold: #E8D9B8;
+
+  --font-display: "Cormorant Garamond", serif;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Lato", "DM Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-dark font-sans antialiased selection:bg-gold-light/30;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-text-dark;
+  }
+
+  .nav-link {
+    @apply text-xs uppercase tracking-[0.2em] font-medium text-text-medium hover:text-gold-primary transition-colors duration-300;
+  }
+}
+
+.ornamental-divider {
+  @apply flex items-center justify-center gap-4 py-8 text-gold-primary opacity-60;
+}
+
+.ornamental-divider::before,
+.ornamental-divider::after {
+  content: "";
+  @apply h-[1px] w-24 bg-gradient-to-r from-transparent to-gold-primary;
+}
+
+.ornamental-divider::after {
+  @apply bg-gradient-to-l;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #C9A84C 0%, #E8D5A3 50%, #8B6914 100%);
+}
+
+.gold-glow {
+  @apply hover:shadow-[0_10px_30px_-10px_rgba(201,168,76,0.25)] transition-shadow duration-500;
+}
+
+.luxury-card {
+  @apply bg-white border-t-2 border-gold-primary p-6 rounded-sm shadow-[0_10px_30px_-10px_rgba(201,168,76,0.15)] hover:shadow-[0_15px_35px_-10px_rgba(201,168,76,0.25)] transition-all duration-500;
+}
