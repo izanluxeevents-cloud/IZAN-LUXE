@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="h-48 md:h-24 bg-text-dark text-white w-full flex flex-col md:flex-row items-center justify-between px-16 shrink-0 gap-6 py-6 md:py-0">
       <div className="flex flex-col items-center md:items-start">
         <img 
-          src="/IZAN_LUXE_Logo.png" 
+          src="/IZAN_LUXE_Logo_Cut.png" 
           alt="IZĀN LUXE Logo" 
           className="h-12 w-auto object-contain brightness-0 invert" 
         />

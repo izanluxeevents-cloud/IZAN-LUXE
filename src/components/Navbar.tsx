@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 
 const NAV_ITEMS = [
-  { label: 'Services', href: '#services' },
   { label: 'About', href: '#about' },
+  { label: 'Services', href: '#services' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -26,14 +26,21 @@ export default function Navbar() {
         isScrolled ? 'py-1 shadow-md' : 'py-2'
       }`}
     >
-      <div className="container mx-auto px-6 h-full flex items-center justify-between">
+      <div className="container mx-auto px-6 h-full flex items-center justify-between relative">
         {/* Logo Section */}
         <div className="relative group cursor-pointer flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img 
-            src="/IZAN_LUXE_Logo.png" 
+            src="/IZAN_LUXE_Logo_Cut.png" 
             alt="IZĀN LUXE Logo" 
             className={`transition-all duration-500 object-contain mix-blend-multiply ${isScrolled ? 'h-24' : 'h-36'}`}
           />
+        </div>
+
+        {/* Center Text Section */}
+        <div className="absolute left-1/2 -translate-x-1/2 hidden lg:block">
+          <span className="font-display text-[#C9A84C] text-xl md:text-2xl tracking-[0.25em] uppercase font-medium whitespace-nowrap drop-shadow-sm">
+            One Stop Event Solution
+          </span>
         </div>
 
         {/* Desktop Navigation */}
@@ -74,7 +81,7 @@ export default function Navbar() {
               <X size={32} />
             </button>
             <img 
-              src="/IZAN_LUXE_Logo.png" 
+              src="/IZAN_LUXE_Logo_Cut.png" 
               alt="IZĀN LUXE Logo" 
               className="h-20 mb-8 mix-blend-multiply"
             />

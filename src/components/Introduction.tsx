@@ -51,7 +51,7 @@ export default function Introduction() {
       {/* Decorative logo watermark */}
       <div className="absolute top-0 right-0 w-96 h-96 opacity-[0.03] -z-10 translate-x-1/2 -translate-y-1/2">
         <img 
-          src="/IZAN_LUXE_Logo.png" 
+          src="/IZAN_LUXE_Logo_Cut.png" 
           alt="" 
           className="w-full h-full object-contain grayscale"
         />

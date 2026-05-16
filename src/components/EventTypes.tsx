@@ -12,7 +12,7 @@ export default function EventTypes() {
       {/* Background Watermark */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03]">
         <img 
-          src="/IZAN_LUXE_Logo.png" 
+          src="/IZAN_LUXE_Logo_Cut.png" 
           alt="" 
           className="w-[50vw] h-[50vw] object-contain grayscale"
         />
