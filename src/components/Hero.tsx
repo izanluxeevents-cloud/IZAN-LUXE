@@ -21,12 +21,6 @@ export default function Hero() {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex flex-col items-center gap-8"
         >
-          {/* Top Flourish */}
-          <div className="flex items-center gap-4 text-gold-primary">
-            <Sparkles size={16} />
-            <Sparkles size={20} />
-            <Sparkles size={16} />
-          </div>
 
           <div className="space-y-4">
             <h1 className="text-6xl md:text-8xl font-display font-light text-text-dark tracking-wide leading-none">
