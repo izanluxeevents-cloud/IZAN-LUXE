@@ -68,25 +68,14 @@ export default function Services() {
               <h3 className="text-2xl font-serif font-medium text-text-dark mb-3">
                 {service.title}
               </h3>
-              <p className="font-sans text-[13px] text-text-medium leading-relaxed mb-6">
+              <p className="font-sans text-[13px] text-text-medium leading-relaxed">
                 {service.description}
               </p>
-              <div className="mt-auto">
-                 <button className="text-[10px] uppercase tracking-widest font-bold text-gold-primary flex items-center gap-2 group-hover:translate-x-2 transition-all duration-300">
-                   Enquire Now <span>→</span>
-                 </button>
-              </div>
             </motion.div>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="mt-20 text-center">
-          <button className="px-12 py-5 bg-gold-primary text-white text-xs uppercase tracking-[0.3em] font-bold hover:bg-gold-dark transition-all duration-300 shadow-xl shadow-gold-primary/20 flex items-center gap-4 mx-auto group">
-            Enquire About Our Services
-            <span className="group-hover:translate-x-2 transition-transform duration-300">→</span>
-          </button>
-        </div>
+
       </div>
     </section>
   );
