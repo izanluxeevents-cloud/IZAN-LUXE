@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
 
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-text-muted mt-4">
-            One stop event solution — Surrey & Greater Vancouver
+            One stop event solution - Surrey & Greater Vancouver
           </p>
 
           {/* Decorative Divider */}
@@ -45,10 +45,10 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col md:flex-row gap-6 mt-8">
             <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
               className="px-12 py-4 gold-gradient text-white text-xs uppercase tracking-[0.2em] font-medium hover:opacity-90 transition-all duration-300 shadow-lg shadow-gold-primary/20"
             >
-              Plan Your Event
+              Book a Consultation
             </button>
             <button 
               onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
