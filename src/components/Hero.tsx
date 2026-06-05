@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
 
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-text-muted mt-4">
-            One stop event solution - Surrey & Greater Vancouver
+            One stop event solution — Surrey & Greater Vancouver
           </p>
 
           {/* Decorative Divider */}
