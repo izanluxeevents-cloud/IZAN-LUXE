@@ -32,7 +32,7 @@ export default function Navbar() {
         <div className="relative group cursor-pointer flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img 
             src="/IZAN_LUXE_Logo_Cut.png" 
-            alt="IZAN LUXE Logo" 
+            alt="IZĀN LUXE Logo" 
             className={`transition-all duration-500 object-contain mix-blend-multiply ${isScrolled ? 'h-24' : 'h-36'}`}
           />
         </div>
@@ -83,7 +83,7 @@ export default function Navbar() {
             </button>
             <img 
               src="/IZAN_LUXE_Logo_Cut.png" 
-              alt="IZAN LUXE Logo" 
+              alt="IZĀN LUXE Logo" 
               className="h-20 mb-8 mix-blend-multiply"
             />
             {NAV_ITEMS.map((item) => (
