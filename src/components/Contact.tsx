@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, Instagram, Facebook, MessageSquare, MessageCircle } from 'lucide-react';
-import React from 'react';
+import { Phone, Mail, MapPin, Facebook, MessageCircle, CalendarCheck } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -60,11 +59,23 @@ export default function Contact() {
                 Connect With Us
               </h2>
               <p className="text-text-medium font-serif italic text-lg leading-relaxed max-w-2xl">
-                Ready to bring your vision to life? Choose your preferred way to reach out. We're responsive and ready to discuss your next big event.
+                Ready to bring your vision to life? Choose your preferred way to reach out. We are responsive and ready to discuss your next big event.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Book Consultation */}
+              <button
+                onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}
+                className="group flex flex-col items-center justify-center p-8 bg-white border border-gold-primary/20 hover:border-gold-primary hover:shadow-xl hover:shadow-gold-primary/10 transition-all duration-500 rounded-sm text-center"
+              >
+                <div className="w-14 h-14 rounded-full bg-gold-primary flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-gold-primary/20">
+                  <CalendarCheck size={24} />
+                </div>
+                <h4 className="text-gold-dark text-xs uppercase tracking-[0.2em] font-bold mb-1">Schedule</h4>
+                <p className="text-text-dark font-display text-lg">Book a Call</p>
+              </button>
+
               {/* Mobile/Phone Call */}
               <a 
                 href="tel:+16049087829"
@@ -110,7 +121,7 @@ export default function Contact() {
                 href="https://www.facebook.com/people/IZ%C4%80N-Luxe-Event/61589532906033/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col items-center justify-center p-8 bg-white border border-gold-primary/20 hover:border-gold-primary hover:shadow-xl hover:shadow-gold-primary/10 transition-all duration-500 rounded-sm text-center"
+                className="group flex flex-col items-center justify-center p-8 bg-white border border-gold-primary/20 hover:border-gold-primary hover:shadow-xl hover:shadow-gold-primary/10 transition-all duration-500 rounded-sm text-center md:col-span-2"
               >
                 <div className="w-14 h-14 rounded-full bg-gold-primary flex items-center justify-center text-white mb-4 group-hover:scale-110 transition-transform duration-500 shadow-lg shadow-gold-primary/20">
                   <Facebook size={24} />
